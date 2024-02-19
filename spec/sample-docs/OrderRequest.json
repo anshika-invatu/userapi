@@ -1,0 +1,9 @@
+{
+    "_id": "5d79f156-727a-4bb3-91d5-bb9796a1ad07",
+    "amount": 50,
+    "currency": "SEK",
+    "description": "Sample Order description",
+    "stripeToken": "tok_ca",
+    "email": "demo@vourity.com",
+    "cartId": "2c249845-3987-44d7-a728-92f64e571071"
+}

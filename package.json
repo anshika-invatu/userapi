@@ -1,0 +1,49 @@
+{
+    "name": "userapi",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "azure-functions-pack": "funcpack pack -c ./",
+        "lint": "eslint .",
+        "test": "mocha --exit --no-timeouts -r ./test.options.js */*.spec.js",
+        "test:watch": "chokidar './**/*.spec.js' -c 'npm test'",
+        "test:debug": "mocha --inspect-brk=9230 --exit --no-timeouts -r ./test.options.js */*.spec.js",
+        "start:dev": "func host start -p 7077 -w node:debug=8077"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@bitbucket.org/vourity/userapi.git"
+    },
+    "keywords": [],
+    "author": "Mohit Singh <mohitsingh.shiv@gmail.com>",
+    "homepage": "https://bitbucket.org/vourity/userapi#readme",
+    "dependencies": {
+        "@azure/core-http": "^3.0.3",
+        "@azure/service-bus": "^7.5.0",
+        "@types/bcryptjs": "^2.4.2",
+        "bcryptjs": "^2.4.3",
+        "bluebird": "3.5.1",
+        "http-signature": "^1.2.0",
+        "jsprim": "^1.4.2",
+        "jwt-simple": "^0.5.6",
+        "moment": "^2.29.4",
+        "mongodb": "^3.6.3",
+        "qs": "^6.11.2",
+        "request": "^2.88.2",
+        "request-promise": "^4.2.2",
+        "stripe": "^6.36.0",
+        "tough-cookie": "^4.1.3",
+        "uuid": "3.2.1",
+        "validator": "^13.7.0",
+        "xml2js": "^0.6.2"
+    },
+    "devDependencies": {
+        "azure-functions-pack": "1.0.0",
+        "chai": "4.1.2",
+        "chai-as-promised": "7.1.1",
+        "chokidar-cli": "1.2.0",
+        "dotenv": "5.0.1",
+        "eslint": "4.19.1",
+        "mocha": "^5.2.0"
+    }
+}

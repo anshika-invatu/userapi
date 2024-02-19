@@ -1,0 +1,114 @@
+{
+	"_id" : "71b27f51-fbde-463a-b7cd-506eefbff7a2",
+	"docType" : "products",
+	"partitionKey" : "71b27f51-fbde-463a-b7cd-506eefbff7a2",
+	"productSKU" : "ARTIKEL1",
+	"productEAN" : "1001",
+	"productGCN" : "",
+	"productName" : "Demo - Presentkort",
+	"productDescription" : "Beskrivning av produkten presentkort",
+	"voucherType" : "giftcard",
+	"isEnabledForSale" : true,
+	"isBundleProduct" : false,
+	"issuer" : {
+		"merchantID" : "3b017043-d26f-4d87-bc07-487e2cf18e2b",
+		"merchantName" : "Demo Shop 2"
+	},
+	"salesPrice" : 100,
+	"vatPercent" : 25,
+	"vatAmount" : 20,
+	"currency" : "SEK",
+	"vatClass" : "SEVAT1",
+	"productClass" : "SalesSPV",
+	"productClassName" : "Sales Single-purpose Voucher",
+	"settleFullAmountOnFirstRedemption" : false,
+	"settleValueOnRedemption" : "redeemedvalue",
+	"settlementAmountPerRedemption" : 0,
+	"bundleDiscountAmount" : 0,
+	"bundleDiscountPercent" : 10,
+	"bundledProducts" : [ ],
+	"resellerCommissionAmount" : 0,
+	"resellerCommissionPercent" : 10,
+	"resellerLimitations" : [ ],
+	"collectorLimitationsMerchants" : [
+		{
+			"merchantID" : "3b017043-d26f-4d87-bc07-487e2cf18e2b",
+			"merchantName" : "Demo Shop 2"
+		}
+	],
+	"collectorLimitationsBusinessUnits" : [ ],
+	"collectorLimitationsPointOfService" : [ ],
+	"posProductLimitations" : [ ],
+	"redemptionRules" : [
+		{
+			"salesPersonCodeIsRequired" : false,
+			"redemptionCodeIsRequired" : false,
+			"redemptionCode" : ""
+		}
+	],
+	"productValue" : {
+		"valueType" : "monetary",
+		"spend" : 1,
+		"redemptionsTotal" : 100,
+		"fixedAmount" : 100,
+		"currency" : "SEK"
+	},
+	"validPeriod" : {
+		"salesPeriodStart" : "2019-02-11",
+		"salesPeriodEnd" : "2024-02-11",
+		"validFromDate" : "2019-02-11",
+		"validToDate" : "2021-02-11",
+		"validDaysOfWeek" : "Mo,Tu,We,Th,Fr,Sa,Su",
+		"validFromTime" : "00:00",
+		"validToTime" : "23:59",
+		"validDaysAfterOrder" : 0,
+		"validDaysAfterFirstRedemption" : 0
+	},
+	"productSellLimitTotal" : 100000,
+	"productSellLimitLeft" : 100000,
+	"categories" : [
+		"shopping"
+	],
+	"tags" : [
+		"presenkort"
+	],
+	"conditions" : "",
+	"campaignCode" : "Kampanj 1",
+	"imageURL" : "https://vourityblob1.blob.core.windows.net/publicmedia/0bb3bf2b-8c71-458e-8c47-4d7a8085e430.jpg",
+	"imageURLThumb" : "",
+	"imageURLGallery" : "",
+	"languageCode" : "",
+	"languageName" : "",
+	"translations" : [ ],
+	"rating" : 0,
+	"totalRatingValue" : 0,
+	"numberofRatings" : 0,
+	"location" : {
+		"streetRow1" : "",
+		"streetRow2" : "",
+		"zip" : "",
+		"city" : "",
+		"state" : "",
+		"country" : "Sweden",
+		"countryCode" : "SE",
+		"latitude" : 0,
+		"longitude" : 0,
+		"locationDescription" : ""
+	},
+	"priceLookupCode" : "1001",
+	"isMultiFunctionVoucher" : true,
+	"balanceAccountType" : "voucher",
+	"balanceAccountID" : "",
+	"isTopupAllowed" : true,
+	"isRefundAllowed" : false,
+	"feeIsPaidBy" : "issuer",
+	"bundleSalesPriceDiscounts" : [ ],
+	"createdDate" : {
+		"$date" : 1549898299435
+	},
+	"updatedDate" : {
+		"$date" : 1549898928043
+	},
+	"balanceAccountName" : "Balance Account",
+	"isVisibleInWebshops" : true
+}

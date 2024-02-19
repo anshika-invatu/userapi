@@ -1,0 +1,43 @@
+'use strict';
+
+const { getMongodbCollection } = require('../db/mongodb');
+const utils = require('../utils');
+const errors = require('../errors');
+
+module.exports = (context, req) => {
+    const executionStart = new Date();
+    return utils
+        .validateUUIDField(context, req.params.id)
+        .then(() => getMongodbCollection('Users'))
+        .then(collection => collection.deleteOne({
+            _id: req.params.id,
+            partitionKey: req.params.id,//cahnge partitionKey in the bac-149
+            docType: 'users'
+        }))
+        .then(result => {
+            if (result && result.deletedCount === 1) {
+                const logMessage = {};
+                logMessage.responseTime = `${(new Date() - executionStart)} ms`; // duration in ms
+                logMessage.userID = req.params.id;
+                logMessage.code = 200;
+                logMessage.operation = 'Delete';
+                logMessage.result = 'Delete User call completed successfully';
+                utils.logInfo(logMessage);
+                context.res = {
+                    body: {
+                        code: 200,
+                        description: 'Successfully deleted the specified user'
+                    }
+                };
+            } else {
+                utils.setContextResError(
+                    context,
+                    new errors.UserNotFoundError(
+                        'The user id specified in the URL doesn\'t exist.',
+                        404
+                    )
+                );
+            }
+        })
+        .catch(error => utils.handleError(context, error));
+};

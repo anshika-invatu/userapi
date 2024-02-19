@@ -1,0 +1,424 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Vourity - Users API",
+    "version": "1.0.0"
+  },
+  "host": "usersapi.vourity.com",
+  "basePath": "/api/v1",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/users": {
+      "post": {
+        "operationId": "CreateUser",
+        "description": "Create user",
+        "summary": "Create user",
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      }
+    },
+    "/users/{id}": {
+      "get": {
+        "operationId": "GetUser",
+        "description": "Retrieve user by id",
+        "summary": "Returns user by id",
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "ID of the user document",
+            "x-example": "ad38ed1f-58ba-4662-bcf1-444b6c6d06a7"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          "404": {
+            "description": "The specified user documentId doesn't exist or is invalid"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "patch": {
+        "operationId": "UpdateUser",
+        "description": "Update user properties by id",
+        "summary": "Update user by id",
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "ID of the user document",
+            "x-example": "ad38ed1f-58ba-4662-bcf1-444b6c6d06a7"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          },
+          "404": {
+            "description": "The specified user documentId doesn't exist or is invalid"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "delete": {
+        "operationId": "DeleteUser",
+        "description": "Delete user by id",
+        "summary": "Delete user by id",
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "ID of the user document",
+            "x-example": "ad38ed1f-58ba-4662-bcf1-444b6c6d06a7"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          },
+          "404": {
+            "description": "The specified user documentId doesn't exist or is invalid"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      }
+    },
+    "/login": {
+      "post": {
+        "operationId": "LoginUser",
+        "description": "Login user",
+        "summary": "Login user",
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Login"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      }
+    },
+    "/forgot-pass": {
+      "post": {
+        "operationId": "ForgotPassword",
+        "description": "Forgot Password",
+        "summary": "Forgot Password",
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ChangeEmail"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      }
+    },
+    "/changepass/{id}": {
+      "post": {
+        "operationId": "ChangePassword",
+        "description": "Change Password",
+        "summary": "Change Password",
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "ID of the user",
+            "x-example": "ad38ed1f-58ba-4662-bcf1-444b6c6d06a7"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ChangePassword"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "ChangeEmail": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        }
+      }
+    },
+    "ChangePassword": {
+      "type": "object",
+      "properties": {
+        "oldPassword": {
+          "type": "string"
+        },
+        "newPassword": {
+          "type": "string"
+        }
+      }
+    },
+    "ApiResponse": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string"
+        },
+        "expires": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        }
+      }
+    },
+    "User": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "docType": {
+          "type": "string"
+        },
+        "loginName": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "salt": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "mobilePhone": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "isEnabled": {
+          "type": "boolean"
+        },
+        "isLocked": {
+          "type": "boolean"
+        },
+        "isVerified": {
+          "type": "boolean"
+        },
+        "merchants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "merchantID": {
+                "type": "string"
+              },
+              "merchantName": {
+                "type": "string"
+              },
+              "userGroups": {
+                "type": "string"
+              },
+              "roles": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "consents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "consentName": {
+                "type": "string"
+              },
+              "consentKey": {
+                "type": "string"
+              },
+              "documentVersion": {
+                "type": "string"
+              },
+              "documentURL": {
+                "type": "string"
+              },
+              "approvalDate": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "lastLoginDate": {
+          "type": "string"
+        },
+        "lastFailedLoginDate": {
+          "type": "string"
+        },
+        "createdDate": {
+          "type": "string"
+        },
+        "updatedDate": {
+          "type": "string"
+        }
+      }
+    },
+    "Login": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "Tag"
+      }
+    }
+  },
+  "securityDefinitions": {
+    "apikeyQuery": {
+      "type": "apiKey",
+      "name": "x-functions-key",
+      "in": "header"
+    }
+  }
+}

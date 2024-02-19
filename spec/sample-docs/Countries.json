@@ -1,0 +1,44 @@
+{
+	 "_id": "1bb58cfa-063d-4f5c-be5d-b90cfb64d1d6",
+	 "docType": "countries",
+	 "countries": [
+		{
+			 "countryName": "Sweden",
+			 "isEnabled": true,
+			 "countryCode": "SE",
+			 "currency": "SEK",
+			 "defaultPricePlanID": "12358cfa-063d-4f5c-be5d-b90cfb64d1d6",
+			 "flagIconURL": "http://media.vourity.com/flag_sweden.png",
+			 "languages": [
+				{
+					 "languageName": "Swedish",
+					 "languageCode": "sv-SE"
+				},
+				{
+					 "languageName": "Swedish2",
+					 "languageCode": "sv-SE"
+				}
+			]
+		},
+		{
+			 "countryName": "Denmark",
+			 "isEnabled": true,
+			 "countryCode": "DK",
+			 "currency": "DKK",
+			 "defaultPricePlanID": "23458cfa-063d-4f5c-be5d-b90cfb64d1d6",
+			 "flagIconURL": "http://media.vourity.com/flag_denmark.png",
+			 "languages": [
+				{
+					 "languageName": "Danish",
+					 "languageCode": "da-DK"
+				},
+				{
+					 "languageName": "Danish2",
+					 "languageCode": "da-DK"
+				}
+			]
+		}
+	],
+	 "createdDate": "2017-10-16T14:05:36Z",
+	 "updatedDate": "2017-10-16T15:18:12Z"
+}

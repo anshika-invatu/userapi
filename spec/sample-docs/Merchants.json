@@ -1,0 +1,92 @@
+{
+	"_id": "1bb58cfa-063d-4f5c-be5d-b90cfb64d1d6",
+	"docType": "merchants",
+	"merchantName": "Your company name",
+	"merchantDescription": "Type a description of your company here",
+	"companyRegistrationNumber": "",
+	"vatNumber": "",
+	"merchantCurrency": "SEK",
+	"isEnabled": true,
+	"isCanceled": false,
+	"blockchainWallet": "",
+	"walletAmount": 0,
+	"walletCurrency": "SEK",
+	"deliveryAddress": [
+	   {
+			"streetRow1": "",
+			"streetRow2": "",
+			"zip": "",
+			"city": "",
+			"state": "",
+			"countryCode": "SE",
+			"country": "Sweden"
+	   }
+   ],
+	"invoiceAddress": [
+	   {
+			"streetRow1": "",
+			"streetRow2": "",
+			"zip": "",
+			"city": "",
+			"state": "",
+			"countryCode": "SE",
+			"country": "Sweden"
+	   }
+   ],
+	"pricePlan": {
+		"_id": "474b917c-9971-4ec4-89b5-0ab80f2607ae",
+		"pricePlanName": "Basic",
+		"startBillingDate": "2017-10-16T14:05:36Z",
+		"endBillingDate": "2030-10-16T14:05:36Z",
+		"feeStartupAmount": 0,
+		"feeMonthlySubscriptionBaseAmount": 99.00,
+		"feeMonthlySubscriptionExtraPerBusinessUnitAmount": 15.00,
+		"feeMonthlySubscriptionExtraPerUserUnitAmount": 18.50,
+		"monthlySubscriptionTransactionsCounter": [
+		   {
+				"feeMonthlySubscriptionAmount": 10.00,
+				"transactionsCountUpTo": 100
+		   },
+		   {
+				"feeMonthlySubscriptionAmount": 20,
+				"transactionsCountUpTo": 200
+		   }
+	   ],
+		"monthlySubscriptionActiveVouchersCounter": [
+		   {
+				"feeMonthlySubscriptionAmount": 10.00,
+				"vouchersCountUpTo": 100
+		   },
+		   {
+				"feeMonthlySubscriptionAmount": 20,
+				"vouchersCountUpTo": 200
+		   }
+	   ],
+		"feePerTransactionPercent": 4.75,
+		"feePerTransactionAmount": 2.01,
+		"payoutForExpiredVouchersPercent": 80.00,
+		"feeCurrency": "SEK",
+		"vatPercent": 25.00
+   },
+	"payoutBankAccounts": [
+   ],
+	"pspName": "",
+	"pspAccount": "",
+	"pspEmail": "",
+	"pspPricePlanID": "",
+	"pspToken": "",
+	"pspSource": "",
+	"payoutFrequency": "monthly",
+	"transactionsLastMonth": 0,
+	"transactionsLastCount": "2017-10-16T14:05:36Z",
+	"businessUnitsLastMonth": 0,
+	"businessUnitsLastCount": "2017-10-16T14:05:36Z",
+	"vouchersActiveLastMonth": 0,
+	"vouchersActiveLastCount": "2017-10-16T14:05:36Z",
+	"usersLastMonth": 0,
+	"usersLastCount": "2017-10-16T14:05:36Z",
+	"canceledDate": "2017-10-16T14:05:36Z",
+	"countryCode": "SE",
+	"createdDate": "2017-10-16T14:05:36Z",
+	"updatedDate": "2017-10-16T15:18:12Z"
+}

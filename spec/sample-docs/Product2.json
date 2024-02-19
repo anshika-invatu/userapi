@@ -1,0 +1,115 @@
+{
+	"_id" : "4b645a33-c8bf-44f7-8440-369fb85fefc1",
+	"docType" : "products",
+	"partitionKey" : "4b645a33-c8bf-44f7-8440-369fb85fefc1",
+	"productSKU" : "Artikel2",
+	"productEAN" : "2002",
+	"productGCN" : "",
+	"productName" : "Demo - Entrebiljett",
+	"productDescription" : "Beskrivning av produkten entrebiljett",
+	"voucherType" : "ticket",
+	"isEnabledForSale" : true,
+	"isBundleProduct" : false,
+	"issuer" : {
+		"merchantID" : "3b017043-d26f-4d87-bc07-487e2cf18e2b",
+		"merchantName" : "Demo Shop 2"
+	},
+	"salesPrice" : 10,
+	"vatPercent" : 25,
+	"vatAmount" : 2,
+	"currency" : "SEK",
+	"vatClass" : "SEVAT1",
+	"productClass" : "SalesSPV",
+	"productClassName" : "Sales Single-purpose Voucher",
+	"settleFullAmountOnFirstRedemption" : false,
+	"settleValueOnRedemption" : "redeemedvalue",
+	"settlementAmountPerRedemption" : 0,
+	"bundleDiscountAmount" : 0,
+	"bundleDiscountPercent" : 0,
+	"bundledProducts" : [ ],
+	"resellerCommissionAmount" : 0,
+	"resellerCommissionPercent" : 10,
+	"resellerLimitations" : [ ],
+	"collectorLimitationsMerchants" : [
+		{
+			"merchantID" : "3b017043-d26f-4d87-bc07-487e2cf18e2b",
+			"merchantName" : "Demo Shop 2"
+		}
+	],
+	"collectorLimitationsBusinessUnits" : [ ],
+	"collectorLimitationsPointOfService" : [ ],
+	"posProductLimitations" : [ ],
+	"redemptionRules" : [
+		{
+			"salesPersonCodeIsRequired" : false,
+			"redemptionCodeIsRequired" : false,
+			"redemptionCode" : ""
+		}
+	],
+	"productValue" : {
+		"valueType" : "exchange",
+		"spend" : 1,
+		"redemptionsTotal" : 100,
+		"currency" : "SEK"
+	},
+	"validPeriod" : {
+		"salesPeriodStart" : "2019-02-11",
+		"salesPeriodEnd" : "2024-02-11",
+		"validFromDate" : "2019-02-11",
+		"validToDate" : "2021-02-11",
+		"validDaysOfWeek" : "Mo,Tu,We,Th,Fr,Sa,Su",
+		"validFromTime" : "00:00",
+		"validToTime" : "23:59",
+		"validDaysAfterOrder" : 0,
+		"validDaysAfterFirstRedemption" : 0
+	},
+	"productSellLimitTotal" : 100000,
+	"productSellLimitLeft" : 100000,
+	"categories" : [
+		"museeum"
+	],
+	"tags" : [
+		"biljett",
+		"entre",
+		"turism"
+	],
+	"conditions" : "",
+	"campaignCode" : "Kampanj 2",
+	"imageURL" : "https://vourityblob1.blob.core.windows.net/publicmedia/d77e0e29-805f-4ca8-b4b3-5dd15cf8ae49.jpg",
+	"imageURLThumb" : "",
+	"imageURLGallery" : "",
+	"languageCode" : "",
+	"languageName" : "",
+	"translations" : [ ],
+	"rating" : 0,
+	"totalRatingValue" : 0,
+	"numberofRatings" : 0,
+	"location" : {
+		"streetRow1" : "",
+		"streetRow2" : "",
+		"zip" : "",
+		"city" : "",
+		"state" : "",
+		"country" : "",
+		"countryCode" : "",
+		"latitude" : 0,
+		"longitude" : 0,
+		"locationDescription" : ""
+	},
+	"priceLookupCode" : "2002",
+	"isMultiFunctionVoucher" : false,
+	"balanceAccountType" : "voucher",
+	"balanceAccountID" : "",
+	"isTopupAllowed" : true,
+	"isRefundAllowed" : false,
+	"feeIsPaidBy" : "issuer",
+	"bundleSalesPriceDiscounts" : [ ],
+	"createdDate" : {
+		"$date" : 1549898496131
+	},
+	"updatedDate" : {
+		"$date" : 1549898650823
+	},
+	"balanceAccountName" : "Balance Account",
+	"isVisibleInWebshops" : true
+}

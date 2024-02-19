@@ -1,0 +1,115 @@
+{
+	"_id" : "1d944b12-058b-467e-ad8a-83aec2779fa1",
+	"docType" : "products",
+	"partitionKey" : "1d944b12-058b-467e-ad8a-83aec2779fa1",
+	"productSKU" : "Artikel3",
+	"productEAN" : "3003",
+	"productGCN" : "",
+	"productName" : "Demo - Kaffekort 10",
+	"productDescription" : "Klippkort 10 kaffe",
+	"voucherType" : "exchangevoucher",
+	"isEnabledForSale" : true,
+	"isBundleProduct" : false,
+	"issuer" : {
+		"merchantID" : "3b017043-d26f-4d87-bc07-487e2cf18e2b",
+		"merchantName" : "Demo Shop 2"
+	},
+	"salesPrice" : 50,
+	"vatPercent" : 25,
+	"vatAmount" : 10,
+	"currency" : "SEK",
+	"vatClass" : "SEVAT1",
+	"productClass" : "SalesSPV",
+	"productClassName" : "Sales Single-purpose Voucher",
+	"settleFullAmountOnFirstRedemption" : false,
+	"settleValueOnRedemption" : "evensplit",
+	"settlementAmountPerRedemption" : 0,
+	"bundleDiscountAmount" : 0,
+	"bundleDiscountPercent" : 0,
+	"bundledProducts" : [ ],
+	"resellerCommissionAmount" : 0,
+	"resellerCommissionPercent" : 5,
+	"resellerLimitations" : [ ],
+	"collectorLimitationsMerchants" : [
+		{
+			"merchantID" : "3b017043-d26f-4d87-bc07-487e2cf18e2b",
+			"merchantName" : "Demo Shop 2"
+		}
+	],
+	"collectorLimitationsBusinessUnits" : [ ],
+	"collectorLimitationsPointOfService" : [ ],
+	"posProductLimitations" : [ ],
+	"redemptionRules" : [
+		{
+			"salesPersonCodeIsRequired" : false,
+			"redemptionCodeIsRequired" : false,
+			"redemptionCode" : ""
+		}
+	],
+	"productValue" : {
+		"valueType" : "exchange",
+		"spend" : 1,
+		"redemptionsTotal" : 10,
+		"currency" : "SEK"
+	},
+	"validPeriod" : {
+		"salesPeriodStart" : "2019-02-11",
+		"salesPeriodEnd" : "2024-02-11",
+		"validFromDate" : "2019-02-11",
+		"validToDate" : "2021-02-11",
+		"validDaysOfWeek" : "Mo,Tu,We,Th,Fr,Sa,Su",
+		"validFromTime" : "00:00",
+		"validToTime" : "23:59",
+		"validDaysAfterOrder" : 0,
+		"validDaysAfterFirstRedemption" : 0
+	},
+	"productSellLimitTotal" : 100000,
+	"productSellLimitLeft" : 100000,
+	"categories" : [
+		"cafe"
+	],
+	"tags" : [
+		"kaffe",
+		"klippkort",
+		"fika"
+	],
+	"conditions" : "Max 10 kaffe. Valfri storlek.",
+	"campaignCode" : "Kampanj 3",
+	"imageURL" : "https://vourityblob1.blob.core.windows.net/publicmedia/8a784dad-706d-497b-a8ef-217b670883b1.jpg",
+	"imageURLThumb" : "",
+	"imageURLGallery" : "",
+	"languageCode" : "",
+	"languageName" : "",
+	"translations" : [ ],
+	"rating" : 0,
+	"totalRatingValue" : 0,
+	"numberofRatings" : 0,
+	"location" : {
+		"streetRow1" : "",
+		"streetRow2" : "",
+		"zip" : "",
+		"city" : "",
+		"state" : "",
+		"country" : "Sweden",
+		"countryCode" : "SE",
+		"latitude" : 0,
+		"longitude" : 0,
+		"locationDescription" : ""
+	},
+	"priceLookupCode" : "3003",
+	"isMultiFunctionVoucher" : false,
+	"balanceAccountType" : "voucher",
+	"balanceAccountID" : "",
+	"isTopupAllowed" : true,
+	"isRefundAllowed" : false,
+	"feeIsPaidBy" : "issuer",
+	"bundleSalesPriceDiscounts" : [ ],
+	"createdDate" : {
+		"$date" : 1549898727786
+	},
+	"updatedDate" : {
+		"$date" : 1549898877230
+	},
+	"balanceAccountName" : "Balance Account",
+	"isVisibleInWebshops" : true
+}
